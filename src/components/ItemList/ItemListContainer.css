@@ -1,0 +1,13 @@
+.greeting {
+    text-decoration: underline;
+    color: darkgoldenrod;
+}
+
+.buttonAddLess {
+    width: 150px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
