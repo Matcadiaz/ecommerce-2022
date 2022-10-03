@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { GrAdd } from 'react-icons/gr';
 import {GrFormSubtract} from 'react-icons/gr';
 
-const Counter = () => {
+const ItemCount = () => {
     
     const [count, setCount] = useState(0);
    
@@ -32,4 +32,4 @@ const Counter = () => {
 
 }
 
-export default Counter;
+export default ItemCount;

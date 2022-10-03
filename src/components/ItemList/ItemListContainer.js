@@ -3,22 +3,28 @@ import Container from 'react-bootstrap/Container'
 import { useEffect, useState } from 'react';
 import ItemList from './ItemList';
 import { useParams } from 'react-router-dom';
-import { getProducts } from '../../utils/products';
+import { getAllProducts, getProductsByCategory } from '../../utils/products';
 
 
 const ItemListContainer = ({greeting}) => {
-    const { categoryName } = useParams();
+    const { categoryId } = useParams();
     const [ products, setProducts ]  = useState([]);
 
     useEffect(() => {
-        console.log(categoryName);
-    },[categoryName])
+        console.log(categoryId);
+    },[categoryId])
     
     useEffect(() => {
-        getProducts()
-        .then((data) => setProducts(data))
-        .catch((error) => console.warn(error))
-        },[])
+        if (categoryId){
+            getProductsByCategory(categoryId)
+            .then((data) => setProducts(data))
+            .catch((error) => console.warn(error))
+        } else{
+            getAllProducts()
+            .then((data) => setProducts(data))
+            .catch((error) => console.warn(error))
+        }
+    }, [categoryId])
         
     return ( 
         <Container>
