@@ -3,6 +3,7 @@ import Container from "react-bootstrap/esm/Container";
 import { useParams } from "react-router-dom";
 import { getProduct } from "../../utils/products";
 import ItemDetail from "./ItemDetail";
+import './ItemDetailContainer.css'
 
 
 
@@ -21,7 +22,7 @@ const ItemDetailContainer = () => {
   },[id]);
   
     return (
-      <Container>
+      <Container className="detailContainer">
         <h1>Detalle del Producto</h1>
         {product && <ItemDetail product={product}/>}
 

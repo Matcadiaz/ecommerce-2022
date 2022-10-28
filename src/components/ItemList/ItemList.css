@@ -1,6 +1,16 @@
+.boxItemsContainer{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
 .itemList{
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
     gap: 20px;
+
+    justify-content: space-around;
+    width: 100%;
 }
+

@@ -6,13 +6,10 @@ import { useParams } from 'react-router-dom';
 import { getAllProducts, getProductsByCategory } from '../../utils/products';
 
 
+
 const ItemListContainer = ({greeting}) => {
     const { categoryId } = useParams();
     const [ products, setProducts ]  = useState([]);
-
-    useEffect(() => {
-        console.log(categoryId);
-    },[categoryId])
     
     useEffect(() => {
         if (categoryId){
@@ -24,11 +21,11 @@ const ItemListContainer = ({greeting}) => {
             .then((data) => setProducts(data))
             .catch((error) => console.warn(error))
         }
-    }, [categoryId])
+    }, [categoryId]);
+    
         
     return ( 
-        <Container>
-            <p>Productos</p>
+        <Container className='boxItemsContainer'>
             <h3 className="greeting">{greeting}</h3>
             <ItemList products={products}/>
         </Container>

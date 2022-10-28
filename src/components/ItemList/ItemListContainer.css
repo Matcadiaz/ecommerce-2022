@@ -1,13 +1,41 @@
 .greeting {
     text-decoration: underline;
-    color: darkgoldenrod;
+    color: rgb(3, 2, 0);
+    font-size: 4.5rem;
+    text-align: center;
+    font-weight: 700;
+    color: whitesmoke;
 }
 
-.buttonAddLess {
-    width: 150px;
-    background-color: lightblue;
+.cardItem{
+    width: 30rem;
+    height: 45rem;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
+    flex-direction: column;
+    background-color: rgba(245, 245, 245, 0.671);
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.cardItem:hover {
+    transform: scale(1.05,1.05);
+    transition:all 0.35s ease-in-out;
+}
+
+.cardItem>img{
+    height: 300px;
+    max-width: 400px;
+    object-fit: contain;
+    padding: 1rem;
+    width: 100%;
+}
+
+.itemCardBody{
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.178);
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content:space-around;
+    width: 100%;
 }

@@ -1,0 +1,12 @@
+.cardStyle{
+    height: 30%;
+    width: 50%;
+    text-align: center;
+}
+
+.cardStyle img{
+    width: auto;
+    height: auto;
+    margin: 2%;
+}
+

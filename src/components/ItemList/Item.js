@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Item = ({product}) => {
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card className='cardItem' hover>
         <Card.Img variant="top" src={product.pictureUrl} />
-        <Card.Body>
+        <Card.Body className='itemCardBody'>
           <Card.Title>{product.title}</Card.Title>
           <Card.Text>
             {product.description}

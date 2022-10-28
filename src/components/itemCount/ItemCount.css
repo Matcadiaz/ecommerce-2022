@@ -1,0 +1,12 @@
+
+.counterButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.spanCount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

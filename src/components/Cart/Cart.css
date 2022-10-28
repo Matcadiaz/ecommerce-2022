@@ -1,0 +1,47 @@
+.cartContainer{
+    margin-top: 2%;
+    color: white;
+    text-align: center;
+ 
+   
+}
+
+.cartContainer h1, h3{
+
+  padding:2%;
+}
+
+.cartContainer img{
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.emptyCart{
+  text-align: center;
+}
+
+.emptyCart img{
+  height: 300px;
+  width: 300px;
+}
+
+.emptyCart h3, div, link{
+  margin: 10px;
+}
+
+.cartButtons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  width: 100%;
+}
+
+.itemTable{
+ background-color: rgba(77, 250, 192, 0.274);
+ font-size: 1.5rem;
+ font-weight: 600;
+}
