@@ -16,7 +16,7 @@ function App() {
 
   return (
   
-    <BrowserRouter>
+    <BrowserRouter basename='/ecommerce-2022/'>
       <CartProvider>
         <>
         <NavBar />
